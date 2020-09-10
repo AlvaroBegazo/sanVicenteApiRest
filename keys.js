@@ -20,7 +20,7 @@ module.exports = {
     autenticacion: process.env.PORT_AUTENTICACION || '5000',
     padre: process.env.PORT_PADRE || '5001',
     estudiante: process.env.PORT_ESTUDIANTE || '5002',
-    administrativo: process.env.PORT_ADMINISTRATIVO || '5003',
+    administrativo: process.env.PORT_ADMINISTRATIVO || '8080',
     files_management: process.env.PORT_ADMINISTRATIVO || '5004',
     docente: process.env.PORT_DOCENTE || '5005'
   },
