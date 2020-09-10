@@ -46,10 +46,10 @@ class Db {
     // this.password = options.password || defaults.password
     // this.database = options.database || defaults.database
 
-    this.host = 'brq2obab09sofnhxd4cf-mysql.services.clever-cloud.com' || defaults.host
-    this.user = 'uefb61qu4c65prv0' || defaults.user
-    this.password = '7pOlnLhXibQn6okGwu69' || defaults.password
-    this.database = 'brq2obab09sofnhxd4cf' || defaults.database
+    this.host = 'brq2obab09sofnhxd4cf-mysql.services.clever-cloud.com'
+    this.user = 'uefb61qu4c65prv0'
+    this.password = '7pOlnLhXibQn6okGwu69'
+    this.database = 'brq2obab09sofnhxd4cf'
     // this.port = '3306' || defaults.port
 
     this.setup
