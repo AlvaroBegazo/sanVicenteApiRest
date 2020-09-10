@@ -6,10 +6,10 @@ module.exports = {
     // password: '7pOlnLhXibQn6okGwu69 ',
     // database: 'brq2obab09sofnhxd4cf'
 
-    host: process.env.MYSQL_ADDON_HOST || 'localhost',
-    user: process.env.MYSQL_ADDON_USER || 'practica',
-    password: process.env.MYSQL_ADDON_PASSWORD || 'practica',
-    database: process.env.MYSQL_ADDON_DB || 'colegio_san_vicente'
+    host: 'brq2obab09sofnhxd4cf-mysql.services.clever-cloud.com',
+    user: 'uefb61qu4c65prv0',
+    password: '7pOlnLhXibQn6okGwu69 ',
+    database: 'brq2obab09sofnhxd4cf'
 
     // host: process.env.MYSQL_HOST || 'localhost',
     // user: process.env.MYSQL_USER || 'practica',
