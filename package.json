@@ -1,0 +1,68 @@
+{
+  "name": "sanvicente_api",
+  "version": "1.0.0",
+  "description": "Modulo Backend para el Proyecto del Colegio San Vicente",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./Services/administracion/index.js",
+    "lint": "standard",
+    "clean_code": "standard --fix",
+    "test_bd": "npm run lint && NODE_ENV=test ava DataBase/test/**-test.js",
+    "test_api": "npm run lint && NODE_ENV=test ava Services/test/**-test.js",
+    "test_file": "npm run lint && NODE_ENV=test ava ServerFile/test/**-test.js",
+    "serverFile": "nodemon ./ServerFile/index.js",
+    "autenticacion": "nodemon ./Services/autenticacion/index.js",
+    "autenticacion_dev": "micro-dev -p 5000 ./Services/autenticacion.js",
+    "padre": "micro -p 5001 ./Services/padre.js",
+    "estudiante": "micro -p 5002 ./Services/estudiante.js",
+    "administracion_old": "micro -p 5003 ./Services/administracion.js",
+    "administracion": "nodemon ./Services/administracion/index.js"
+  },
+  "standard": {
+    "ignore": [
+      "**/deprecated/"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/flavi0/sanvicente_back.git"
+  },
+  "author": "Ejemplo autor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/flavi0/sanvicente_back/issues"
+  },
+  "homepage": "https://gitlab.com/flavi0/sanvicente_back#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bcrypt": "^5.0.0",
+    "body-parse": "^0.1.0",
+    "body-parser": "^1.19.0",
+    "bunyan": "^1.8.14",
+    "consign": "^0.1.6",
+    "del": "^5.1.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.7-alpha.4",
+    "http-hash": "^2.0.1",
+    "jwt-simple": "^0.5.6",
+    "micro": "^9.3.4",
+    "micro-cors": "^0.1.1",
+    "moment": "^2.27.0",
+    "mysql": "^2.18.1",
+    "node-gyp": "^7.1.0",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5",
+    "swagger-jsdoc": "^4.0.0",
+    "swagger-ui-express": "^4.1.4",
+    "uuid": "^8.2.0",
+    "validator": "^13.1.1",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "ava": "^3.10.1",
+    "babel-eslint": "^10.1.0",
+    "nodemon": "^2.0.4",
+    "standard": "^14.3.4",
+    "test-listen": "^1.1.0"
+  }
+}
