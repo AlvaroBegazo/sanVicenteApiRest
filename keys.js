@@ -8,7 +8,7 @@ module.exports = {
 
     host: 'brq2obab09sofnhxd4cf-mysql.services.clever-cloud.com',
     user: 'uefb61qu4c65prv0',
-    password: '7pOlnLhXibQn6okGwu69 ',
+    password: '7pOlnLhXibQn6okGwu69',
     database: 'brq2obab09sofnhxd4cf'
 
     // host: process.env.MYSQL_HOST || 'localhost',
