@@ -4,7 +4,7 @@
   "description": "Modulo Backend para el Proyecto del Colegio San Vicente",
   "main": "index.js",
   "scripts": {
-    "start": "node ./Services/administracion/index.js",
+    "start": "node Services/administracion/index.js",
     "lint": "standard",
     "clean_code": "standard --fix",
     "test_bd": "npm run lint && NODE_ENV=test ava DataBase/test/**-test.js",
